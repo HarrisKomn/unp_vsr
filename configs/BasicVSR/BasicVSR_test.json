@@ -1,0 +1,31 @@
+{
+  "dataroot": "",
+  "model": "basicvsr_cut",
+  "name": "vsr_2023_chkpt",
+  "preprocess": "crop",
+  "direction": "AtoB" ,
+  "dataset_mode": "ioct",
+  "apply_segm_loss": "False",
+  "apply_online_augmentation": "False",
+  "normG": "batch",
+  "input_nc": 1,
+  "output_nc": 1,
+  "phase": "test",
+  "load_size_h": 304,
+  "load_size_w": 448,
+  "crop_size_h": 304,
+  "crop_size_w": 448,
+  "batch_size": 1,
+  "nce_idt" : "False",
+  "netG": "BasicVSR",
+  "lambda_sSR": 0,
+  "lambda_perc":0.0,
+  "CUT_mode": "CUT",
+  "lgm_mode" : "False",
+  "test_checkpoint_list": ["1"],
+  "eval": "True",
+  "no_dropout" : "True"
+}
+
+
+

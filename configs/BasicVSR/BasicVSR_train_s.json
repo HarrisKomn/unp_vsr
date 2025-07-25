@@ -1,0 +1,33 @@
+{
+  "dataroot": "",
+  "model": "basicvsr_cut",
+  "name": "BasicVSR_s_5NCE5_1PERC",
+
+  "netG": "BasicVSR",
+  "dataset_mode": "ioct",
+
+  "batch_size": 4,
+  "normG": "batch",
+  "CUT_mode": "CUT",
+
+  "nce_idt" : "False",
+  "lambda_NCE": 5.0,
+  "lambda_perc":5.0,
+  "lambda_GAN": 1.0,
+  "netF_nc": 256,
+  "nce_T": 0.07,
+  "num_patches": 256,
+
+  "load_size": 384,
+  "crop_size": 320,
+  "crop_size_w": 320,
+  "crop_size_h": 256,
+
+  "preprocess": "crop_colorJitter_GaussianBlur_Brightness_Scale_Constrast",
+  "lr": 0.0001,
+  "no_dropout" : "True",
+  "nce_includes_all_negatives_from_minibatch": "False"
+}
+
+
+
